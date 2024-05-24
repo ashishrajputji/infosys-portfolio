@@ -14,6 +14,26 @@ a:hover, a:active{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     transform: translate(.2em, 0.2em);
 }
+.heading-primary{
+    font-size: 4.8em;
+    background: linear-gradient(90deg, rgba(2,240,254,1) 0%, rgb(147, 161, 255) 54%, rgba(0,212,255,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.heading-secondary{
+    font-size: 2.4em;
+    line-height: 1.6em;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, rgba(2,240,254,1) 0%, rgb(147, 161, 255) 54%, rgba(0,212,255,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.paragraph{
+    font-size: 2em;
+    color: white;
+    margin: 2em 0;
+}
 body{
     display: grid;
     grid-template-columns: repeat(10, 10%);
@@ -23,6 +43,7 @@ body{
     font-style: normal;
     font-size: 10px;
 }
+/* hero element styling */
 .hero{
     grid-area: 1 / 1 / 2 / 11;
     background-size: cover;
@@ -77,35 +98,84 @@ body{
     padding: 10% 40% 10% 15%;
     text-align: center;
 }
-.heading-primary{
-    font-size: 4.8em;
-}
-.heading-secondary{
-    font-size: 2.4em;
-    line-height: 1.6em;
-    text-transform: capitalize;
-}
 
 /* About Section */
 .about{
     grid-area: 2 / 1 / 3 / 11;
-    background: rgb(144,0,187);
-background: linear-gradient( rgb(94, 1, 122) 0%, rgba(6,6,147,1) 70%, rgb(0, 153, 255) 100%);
+    background: linear-gradient( rgb(94, 1, 122) 0%, rgb(1, 1, 61) 70%, rgb(1, 2, 53) 100%); 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 3fr;
     padding: 5% 10%;
-    gap: 2rem 2rem;
+    gap: 2rem 4rem;
 }
 .about-heading{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-}
+    text-align: center;
+    }
 .about-intro{
     grid-column: 1/3;
     grid-row: 2 / 3;
+    text-align: justify;
+    padding: 1em 4em;
 }
 .about-skills{
     grid-column: 3/5;
     grid-row: 2 / 3;
+    padding: 1em 4em;
+    font-size: 2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em 2em;
+    flex-wrap: wrap;
+}
+.about-skills > span{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.about-skills-item{
+    list-style-type: none;
+    color: white;
+    background-color: rgba(9, 185, 255, 0.658);
+    padding: .5em 1.5em;
+    border-radius: .4em;
+}
+/* Projects */
+.project-illustration{
+    width: 40vw;
+}
+.projects{
+    grid-area: 3/1/4/11;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(3, 2fr);
+    background: linear-gradient(0deg, rgba(88,35,110,1) 0%, rgba(1,20,57,1) 100%);
+    padding: 5% 10%;
+}
+.projects-heading{
+    grid-area: 1/2/2/4;
+}
+.projects-item{
+    border: 2px solid white;
+    padding: 2em 3vw;;
+    display: flex;
+    align-items: center;
+
+}
+.projects-item-1{
+    grid-area: 2/1/3/5;
+}
+.projects-item-2{
+    grid-area: 3/1/4/5;
+}
+.projects-item-3{
+    grid-area: 4/1/5/5;
 }
