@@ -174,8 +174,7 @@ body{
     text-align: center;
 }
 .projects-item{
-    border: 2px solid white;
-    padding: 1em 3vw;;
+    padding: 0 3vw;;
     display: flex;
     align-items: center;
     text-align: justify;
