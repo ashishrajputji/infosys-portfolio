@@ -34,6 +34,17 @@ a:hover, a:active{
     color: white;
     margin: 2em 0;
 }
+@media only screen and (max-width: 1400px) {
+.heading-primary{
+    font-size: 2.4em;
+}
+.heading-secondary{
+    font-size: 1.2em;
+}
+.paragraph{
+    font-size: 1em;
+}
+}
 body{
     display: grid;
     grid-template-columns: repeat(10, 10%);
@@ -83,14 +94,13 @@ body{
     list-style-type: none;
 }
 @media only screen and (max-width: 1400px) {
-    .nav-links :nth-child(3){
+    
+    .nav-links {
         display: none;
     }
-    .nav-links {
-        grid-column: 6 / 10;
-    }
     .nav-logo-container{
-        grid-column: 2 / 4; 
+        grid-column: 2 / 8; 
+        justify-content: flex-start;
     }
     .nav-logo-container h1{
         font-size: 1em;
@@ -112,6 +122,11 @@ body{
     background-color: rgba(9, 185, 255, 0.781);
     border-radius: .1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@media only screen and (max-width: 1400px) {
+.hero-contact{
+    left: .5em;
+}
 }
 .hero-intro{
     display: flex;
@@ -169,15 +184,6 @@ body{
     gap: 2em 2em;
     flex-wrap: wrap;
 }
-.about-skills > span{
-    background-color: aliceblue;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 .about-skills-item{
     list-style-type: none;
     color: white;
@@ -185,6 +191,28 @@ body{
     padding: .5em 1.5em;
     border-radius: .4em;
 }
+@media only screen and (max-width: 1400px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 5% 3em 5%;
+    }
+    .about-heading{
+        padding: 0 15%;
+    }
+    .about-intro{
+        padding: 0 15%;
+    }
+    .about-skills{
+        padding: 0 15%;
+        font-size: 1.2em;
+        gap: 1em;
+    }
+    .about-skills-item{
+        padding: 0.2em 1em;
+        border-radius: .2em;
+    }
+    }
 /* Projects */
 .project-illustration{
     width: 40vw;
@@ -196,6 +224,13 @@ body{
     font-size: 2.4em;
     padding: .5em 1.2em;
     border-radius: .3em;
+}
+@media only screen and (max-width: 1400px) {
+.btn-main{
+    font-size: 1.2em;
+    padding: .2em 0.6em;
+    border-radius: .1em;
+}
 }
 .projects{
     grid-area: 3/1/4/11;
@@ -210,6 +245,7 @@ body{
         display: flex;
         flex-direction: column;
         padding: 0% 10%;
+        gap: 2em;
     }
 }
 .projects-heading{
@@ -231,6 +267,25 @@ body{
 }
 .projects-item-3{
     grid-area: 4/1/5/5;
+}
+.project-1-heading, .project-2-heading, .project-3-heading{
+    display: none;
+}
+@media only screen and (max-width: 1400px) {
+    .project-illustration{
+        width: 70vw;
+    }
+    .projects-item{
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .project-1-heading, .project-2-heading, .project-3-heading{
+        display: block;
+        align-self: start;
+    }
+    .project-item-desc > .heading-secondary{
+        display: none;
+    }
 }
 .reach-me{
     grid-area: 4/1/5/11;
