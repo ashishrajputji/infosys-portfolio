@@ -148,7 +148,7 @@ body{
     .hero-intro{
         background-color: rgba(3, 3, 3, 0);
       height: auto;
-      padding: 10% 20%;
+      padding: 10% 15%;
     }
   }
 /* About Section */
@@ -195,7 +195,7 @@ body{
     .about{
         display: flex;
         flex-direction: column;
-        padding: 1em 10% 3em 10%;
+        padding: 1em 5% 3em 5%;
     }
     .about-heading{
         padding: 0 15%;
@@ -321,4 +321,16 @@ body{
 }
 .reach-me-copyright > p{
     margin-top: .5em;
+}
+@media only screen and (max-width: 1400px) {
+.reach-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reach-me-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
