@@ -148,7 +148,7 @@ body{
     .hero-intro{
         background-color: rgba(3, 3, 3, 0);
       height: auto;
-      padding: 10% 10%;
+      padding: 10% 20%;
     }
   }
 /* About Section */
@@ -195,7 +195,7 @@ body{
     .about{
         display: flex;
         flex-direction: column;
-        padding: 1em 5% 3em 5%;
+        padding: 1em 10% 3em 10%;
     }
     .about-heading{
         padding: 0 15%;
